@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Catálogo de Filmes</title>
+
+  {{ style('vendor/bootstrap/css/bootstrap.min.css') }}
+  {{ style('css/business-frontpage.css') }}
+
+  @!section('styles')
+
+</head>
+
+<body>
+
+  @include('layouts.menu')
+
+  @include('layouts.header')
+
+  @!section('content')
+
+  @include('layouts.footer')
+
+
+  <!-- Bootstrap core JavaScript -->
+  {{ script('vendor/jquery/jquery.min.js') }}
+  {{ script('vendor/bootstrap/js/bootstrap.bundle.min.js') }}
+
+  @!section('scripts')
+
+</body>
+
+</html>

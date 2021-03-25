@@ -16,4 +16,8 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.get("/", "HomeController.index").as('home.index');
+Route.get("/film", "FilmController.index").as('film.index');
+Route.get("/contact", "ContactController.index").as('contact.index');
+Route.get("/rate", "RateController.index").as('rate.index');
+Route.get("/category", "CategoryController.index").as('category.index');
